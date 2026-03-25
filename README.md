@@ -20,6 +20,7 @@ Modern real estate lead-generation web app built with React + Vite + Supabase.
 - `src/context` - auth state
 - `src/data` - local seed fallback and testimonials
 - `supabase/schema.sql` - database schema and policies
+- `supabase/seed-demo-properties.sql` - 24 demo properties for quick testing
 
 ## Setup
 
