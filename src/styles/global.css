@@ -99,7 +99,7 @@ th, td { padding: .9rem; border-bottom: 1px solid var(--border); text-align: lef
   .property-image-wrap img { height: 220px; }
 }
 @media (max-width: 640px) {
-  .page-section, .hero-section { padding: 3.4rem 0; }
+  .page-section, .hero-section { padding: 2.4rem 0; }
   .gallery-grid { grid-template-columns: 1fr; }
   .gallery-grid img:first-child, .gallery-grid img:not(:first-child) { grid-column: auto; height: 220px; }
   .section-heading, .dashboard-head, .footer-grid, .table-head-row { flex-direction: column; align-items: start; }
