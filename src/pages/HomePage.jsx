@@ -28,7 +28,7 @@ export function HomePage() {
   return (
     <>
       <Helmet>
-        <title>EstateFlow | Premium Real Estate & Lead Platform</title>
+        <title>Estate Professional | Premium Real Estate Platform</title>
         <meta name="description" content="Search premium flats, plots, and commercial spaces with direct lead capture and WhatsApp conversion." />
       </Helmet>
       <section className="hero-section">

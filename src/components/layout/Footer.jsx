@@ -3,8 +3,8 @@ export function Footer() {
     <footer className="footer">
       <div className="container footer-grid">
         <div>
-          <h3>EstateFlow</h3>
-          <p>Modern real estate lead generation platform built for speed, trust, and conversions.</p>
+          <h3>Estate Professional</h3>
+          <p>Professional real estate lead generation platform built for trust, fast responses, and serious conversions.</p>
         </div>
         <div>
           <h4>Quick links</h4>

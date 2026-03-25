@@ -34,7 +34,9 @@ iframe { width: 100%; min-height: 340px; border: 0; border-radius: 18px; }
 .eyebrow { color: var(--primary); text-transform: uppercase; letter-spacing: .18em; font-size: .78rem; font-weight: 800; }
 .navbar { position: sticky; top: 0; z-index: 30; background: rgba(248,250,252,0.92); backdrop-filter: blur(14px); border-bottom: 1px solid rgba(219,228,238,0.8); }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; min-height: 78px; gap: 1rem; }
-.brand { display: flex; align-items: center; gap: .7rem; font-weight: 800; font-size: 1.2rem; }
+.brand { display: flex; align-items: center; gap: .8rem; font-weight: 800; font-size: 1.2rem; }
+.brand-mark { position: relative; width: 42px; height: 42px; display: inline-flex; align-items: center; justify-content: center; border-radius: 14px; background: linear-gradient(135deg, var(--primary), #0f172a); color: white; box-shadow: 0 10px 24px rgba(15, 118, 110, 0.28); }
+.brand-mark svg:last-child { position: absolute; right: -4px; bottom: -3px; background: white; color: var(--accent); border-radius: 999px; padding: 2px; box-sizing: content-box; }
 .nav-links { display: flex; align-items: center; gap: 1rem; }
 .nav-links a { color: var(--muted); font-weight: 600; }
 .nav-links .active { color: var(--text); }

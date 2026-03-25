@@ -1,4 +1,4 @@
-import { Building2, Menu, PhoneCall, X } from 'lucide-react';
+import { Building2, Menu, PhoneCall, ShieldCheck, X } from 'lucide-react';
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { classNames } from '../../lib/utils';
@@ -16,8 +16,11 @@ export function Navbar() {
     <header className="navbar">
       <div className="container nav-inner">
         <Link className="brand" to="/">
-          <Building2 size={28} />
-          <span>EstateFlow</span>
+          <span className="brand-mark">
+            <Building2 size={24} />
+            <ShieldCheck size={14} />
+          </span>
+          <span>Estate Professional</span>
         </Link>
         <nav className={classNames('nav-links', open && 'is-open')}>
           {links.map(([label, href]) => (
