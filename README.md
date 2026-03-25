@@ -37,7 +37,7 @@ Modern real estate lead-generation web app built with React + Vite + Supabase.
    ```
 3. Fill in Supabase values in `.env`
 4. In Supabase SQL editor, run `supabase/schema.sql`
-5. Create a storage bucket named `property-images` and make it public
+5. Run the storage bucket and storage policy SQL from `supabase/schema.sql` so uploads work from the admin dashboard
 6. Create an admin user in Supabase Auth using email/password
 7. Start development server
    ```bash
@@ -55,4 +55,6 @@ Modern real estate lead-generation web app built with React + Vite + Supabase.
 
 - Without Supabase env variables, the public site still renders using local seed data.
 - Admin write actions require Supabase credentials.
+- Public lead form uses anonymous insert only; if you re-add `.select()` on insert, you will also need an anon `SELECT` policy on `leads`.
+- Storage uploads require `storage.objects` policies in addition to table policies.
 - Update the phone number in `.env` for WhatsApp lead capture.

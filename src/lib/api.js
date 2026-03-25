@@ -44,7 +44,9 @@ export async function getPropertyBySlug(slug) {
 
 export async function submitLead(payload) {
   if (!hasSupabaseEnv) return { data: payload, error: null };
-return supabase.from('leads').insert([payload]).select().single();}
+  const { error } = await supabase.from('leads').insert([payload]);
+  return { data: payload, error };
+}
 
 export async function getDashboardAnalytics() {
   if (!hasSupabaseEnv) return { totalProperties: seedProperties.length, totalLeads: 0 };
